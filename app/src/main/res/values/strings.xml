@@ -3,4 +3,12 @@
     <string name="exit">退出</string>
     <string name="reset">重置</string>
     <string name="title">采购定价计算器</string>
+    <string name="xiaoshoujiage">销售价格</string>
+    <string name="caigoujiage">采购价格</string>
+    <string name="yunshufeiyong">运输费用</string>
+    <string name="jiagongfeiyong">加工费用</string>
+    <string name="mubiaolirun">目标利润</string>
+    <string name="xiaoshoumaoli">销售毛利</string>
+    <string name="caigouxianjia">采购限价</string>
+    <string name="tax">税率(%)</string>
 </resources>
