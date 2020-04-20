@@ -43,10 +43,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_height="wrap_content">
 
         <TextView
             android:id="@+id/xiaoshoujiage"
@@ -107,39 +104,44 @@
             android:layout_alignBaseline="@id/tax_caigoujiage"            android:layout_alignLeft="@id/edt_caigoujiage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignRight="@id/edt_tax_caigoujiage"></EditText>
+            android:layout_alignRight="@id/edt_tax_caigoujiage" />
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <TextView
             android:id="@+id/yunshufeiyong"
-            android:text="@string/yunshufeiyong"
-            android:textSize="20dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="@string/yunshufeiyong"
+            android:textSize="20dp" />
+
         <EditText
             android:id="@+id/edt_yunshufeiyong"
-            android:layout_toRightOf="@id/yunshufeiyong"
-            android:layout_alignBottom="@id/yunshufeiyong"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:id="@+id/tax_yunshufeiyong"
-            android:layout_below="@+id/yunshufeiyong"
-            android:text="@string/tax"
-            android:textSize="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <EditText
-            android:id="@+id/edt_tax_yunshufeiyong"
-            android:layout_toRightOf="@id/tax_yunshufeiyong"
-            android:layout_alignBaseline="@id/tax_yunshufeiyong"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignRight="@id/edt_tax_yunshufeiyong"></EditText>
+            android:layout_alignBaseline="@id/yunshufeiyong"
+            android:layout_toRightOf="@id/yunshufeiyong" />
+
+        <TextView
+            android:id="@+id/tax_yunshufeiyong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/yunshufeiyong"
+            android:text="@string/tax"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edt_tax_yunshufeiyong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tax_yunshufeiyong"
+            android:layout_alignRight="@id/edt_tax_yunshufeiyong"
+            android:layout_toRightOf="@id/tax_yunshufeiyong" />
     </RelativeLayout>
+
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -148,22 +150,17 @@
             android:id="@+id/jiagongfeiyong"
             android:text="@string/jiagongfeiyong"
             android:textSize="20dp"
-            android:layout_alignParentBottom="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <EditText
             android:id="@+id/edt_jiagongfeiyong"
             android:layout_toRightOf="@id/jiagongfeiyong"
-            android:layout_alignParentBottom="true"
+            android:layout_alignBaseline="@id/jiagongfeiyong"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
         <TextView
             android:id="@+id/tax_jiagongfeiyong"
+            android:layout_below="@+id/jiagongfeiyong"
             android:text="@string/tax"
             android:textSize="20dp"
             android:layout_width="wrap_content"
@@ -174,7 +171,85 @@
             android:layout_alignBaseline="@id/tax_jiagongfeiyong"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignRight="@id/edt_tax_jiagongfeiyong"></EditText>
+            android:layout_alignRight="@id/edt_tax_jiagongfeiyong" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/mubiaolirun"
+            android:text="@string/mubiaolirun"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edt_mubiaolirun"
+            android:layout_toRightOf="@id/mubiaolirun"
+            android:layout_alignBaseline="@id/mubiaolirun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/fanhuan"
+            android:layout_below="@+id/mubiaolirun"
+            android:text="@string/fanhuan"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edt_fanhuan"
+            android:layout_toRightOf="@id/fanhuan"
+            android:layout_alignBaseline="@id/fanhuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/edt_mubiaolirun" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/count"
+        android:text="@string/count"
+        android:background="@drawable/count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f8f5cc">
+        <TextView
+            android:id="@+id/xiaoshoumaoli"
+            android:text="@string/xiaoshoumaoli"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/show_xiaoshoumaoli"
+            android:background="@drawable/show"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/xiaoshoumaoli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f8f5cc">
+        <TextView
+            android:id="@+id/caigouxianjia"
+            android:text="@string/caigouxianjia"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/show_caigouxianjia"
+            android:background="@drawable/show"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/caigouxianjia"
+            android:layout_alignBaseline="@id/caigouxianjia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
     </RelativeLayout>
 
 </LinearLayout>

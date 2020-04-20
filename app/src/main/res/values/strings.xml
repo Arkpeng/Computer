@@ -11,4 +11,6 @@
     <string name="xiaoshoumaoli">销售毛利</string>
     <string name="caigouxianjia">采购限价</string>
     <string name="tax">税率(%)</string>
+    <string name="fanhuan">返还</string>
+    <string name="count">计&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;算</string>
 </resources>
