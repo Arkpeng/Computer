@@ -1,13 +1,16 @@
 package com.example.administrator.computer;
 
+import android.nfc.Tag;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    private static final String Tag = "打印日志";
     public Button exit;
     public Button reset;
     public Button count;
@@ -54,7 +57,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         init();
-        getValue();
         exit.setOnClickListener(this);
         reset.setOnClickListener(this);
         count.setOnClickListener(this);
@@ -102,6 +104,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         show_xiaoshoumaoli = (TextView) findViewById(R.id.show_xiaoshoumaoli);
         caigouxianjia = (TextView) findViewById(R.id.caigouxianjia);
         show_caigouxianjia = (TextView) findViewById(R.id.show_caigouxianjia);
+
+        edt_xiaoshoujiage.setText("0.0");
+        edt_tax_xiaoshoujiage.setText("0.0");
+        edt_caigoujiage.setText("0.0");
+        edt_tax_caigoujiage.setText("0.0");
+        edt_yunshufeiyong.setText("0.0");
+        edt_tax_yunshufeiyong.setText("0.0");
+        edt_jiagongfeiyong.setText("0.0");
+        edt_tax_jiagongfeiyong.setText("0.0");
+        edt_mubiaolirun.setText("0.0");
+        edt_fanhuan.setText("0.0");
     }
 
     @Override
@@ -110,10 +123,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.exit:
                 finish();
             case R.id.reset:
-                edt_xiaoshoujiage.setText("");
-                edt_tax_xiaoshoujiage.setText("");
-                edt_caigoujiage.setText("");
-                edt_tax_caigoujiage.setText("");
+                String a = 0.0f);
+                edt_xiaoshoujiage.setText(a);
+                edt_tax_xiaoshoujiage.setText(a);
+                edt_caigoujiage.setText(a);
+                edt_tax_caigoujiage.setText(a);
                 edt_yunshufeiyong.setText("");
                 edt_tax_yunshufeiyong.setText("");
                 edt_jiagongfeiyong.setText("");
@@ -122,6 +136,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 edt_fanhuan.setText("");
                 show_xiaoshoumaoli.setText("");
                 show_caigouxianjia.setText("");
+            case R.id.count:
+                getValue();
+                show_xiaoshoumaoli.setText(a);
+                show_caigouxianjia.setText(b);
 
         }
     }
