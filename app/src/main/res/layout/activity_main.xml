@@ -56,6 +56,7 @@
             android:id="@+id/edt_xiaoshoujiage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="number|numberDecimal"
             android:layout_alignBaseline="@id/xiaoshoujiage"
             android:layout_toRightOf="@id/xiaoshoujiage" />
 
@@ -71,6 +72,7 @@
             android:id="@+id/edt_tax_xiaoshoujiage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="number|numberDecimal"
             android:layout_alignBaseline="@id/tax_xiaoshoujiage"
             android:layout_alignLeft="@id/edt_xiaoshoujiage"
             android:layout_toRightOf="@id/tax_xiaoshoujiage" />
@@ -89,6 +91,7 @@
             android:id="@+id/edt_caigoujiage"
             android:layout_toRightOf="@id/caigoujiage"
             android:layout_alignBaseline="@id/caigoujiage"
+            android:inputType="number|numberDecimal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <TextView
@@ -102,6 +105,7 @@
             android:id="@+id/edt_tax_caigoujiage"
             android:layout_toRightOf="@id/tax_caigoujiage"
             android:layout_alignBaseline="@id/tax_caigoujiage"            android:layout_alignLeft="@id/edt_caigoujiage"
+            android:inputType="number|numberDecimal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignRight="@id/edt_tax_caigoujiage" />
@@ -122,6 +126,7 @@
             android:id="@+id/edt_yunshufeiyong"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="number|numberDecimal"
             android:layout_alignBaseline="@id/yunshufeiyong"
             android:layout_toRightOf="@id/yunshufeiyong" />
 
@@ -137,6 +142,7 @@
             android:id="@+id/edt_tax_yunshufeiyong"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="number|numberDecimal"
             android:layout_alignBaseline="@id/tax_yunshufeiyong"
             android:layout_alignRight="@id/edt_tax_yunshufeiyong"
             android:layout_toRightOf="@id/tax_yunshufeiyong" />
@@ -156,6 +162,7 @@
             android:id="@+id/edt_jiagongfeiyong"
             android:layout_toRightOf="@id/jiagongfeiyong"
             android:layout_alignBaseline="@id/jiagongfeiyong"
+            android:inputType="number|numberDecimal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <TextView
@@ -169,6 +176,7 @@
             android:id="@+id/edt_tax_jiagongfeiyong"
             android:layout_toRightOf="@id/tax_jiagongfeiyong"
             android:layout_alignBaseline="@id/tax_jiagongfeiyong"
+            android:inputType="number|numberDecimal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignRight="@id/edt_tax_jiagongfeiyong" />
@@ -187,6 +195,7 @@
             android:id="@+id/edt_mubiaolirun"
             android:layout_toRightOf="@id/mubiaolirun"
             android:layout_alignBaseline="@id/mubiaolirun"
+            android:inputType="number|numberDecimal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <TextView
@@ -200,6 +209,7 @@
             android:id="@+id/edt_fanhuan"
             android:layout_toRightOf="@id/fanhuan"
             android:layout_alignBaseline="@id/fanhuan"
+            android:inputType="number|numberDecimal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@id/edt_mubiaolirun" />
